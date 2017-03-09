@@ -18,6 +18,10 @@ body {
   color: #658ccd;
 }
 
+h2 {
+  margin-top: 3.5rem;
+}
+
 hr {
   border-bottom: .1rem solid #658ccd;
   margin: 2rem 0;
@@ -60,6 +64,6 @@ tr td:first-child {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: .65rem;
+    font-size: .7rem;
   }
 }
