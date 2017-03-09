@@ -29,6 +29,7 @@ hr {
 
 table {
   margin: 2rem auto;
+  border-collapse: collapse;
 }
 
 
@@ -40,12 +41,17 @@ tr:first-child {
   background: none;
   color: #f2479d;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 
 td {
+  margin: 0;
   padding: .4rem 1rem;
-  border: 1px solid #90F2FF;
+  /* border: 1px solid #90F2FF; */
+  border-right: 1px solid #90F2FF;
+
 }
 
 tr:first-child td {
@@ -60,6 +66,12 @@ tr td:first-child {
 
 .current {
   background: #ffddee;
+}
+.true {
+  color: #50d494;
+}
+.false {
+  color: #e47272;
 }
 
 @media only screen and (max-width: 600px) {

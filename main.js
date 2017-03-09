@@ -9,26 +9,27 @@ for (var i = 0; i < types.length; i++) {
   //column: current name
   var newRow = document.createElement('tr');
   var newCell = document.createElement('td');
-  var titleNode = document.createTextNode(types[i]);
-  newCell.appendChild(titleNode);
+  var textNode = document.createTextNode(types[i]);
+  newCell.appendChild(textNode);
   newRow.appendChild(newCell);
 
   //column: number coercions
   var newCell = document.createElement('td');
-  var titleNode = document.createTextNode(Number(types[i]));
-  newCell.appendChild(titleNode);
+  var textNode = document.createTextNode(Number(types[i]));
+  newCell.appendChild(textNode);
   newRow.appendChild(newCell);
 
   //column: string coercions
   var newCell = document.createElement('td');
-  var titleNode = document.createTextNode(String(types[i]));
-  newCell.appendChild(titleNode);
+  var textNode = document.createTextNode(String(types[i]));
+  newCell.appendChild(textNode);
   newRow.appendChild(newCell);
 
   //column: Boolean coercions
   var newCell = document.createElement('td');
-  var titleNode = document.createTextNode(Boolean(types[i]));
-  newCell.appendChild(titleNode);
+  var textNode = document.createTextNode(Boolean(types[i]));
+  newCell.className += String(Boolean(types[i]));
+  newCell.appendChild(textNode);
   newRow.appendChild(newCell);
 
 
