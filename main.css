@@ -1,0 +1,41 @@
+/* colors http://colorhunt.co/c/62610
+#fff
+#E0FCFF
+#90F2FF
+#6EB6FF
+#7098DA
+#658ccd
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  padding: 1rem;
+  color: #658ccd;
+}
+
+table {
+  margin: 2rem auto;
+}
+
+tr:nth-child(2n) {
+  background: #E0FCFF;
+}
+
+td {
+  padding: .4rem 1rem;
+  border: 1px solid #90F2FF;
+}
+.current {
+  background: #ffddee;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: .65rem;
+  }
+}
