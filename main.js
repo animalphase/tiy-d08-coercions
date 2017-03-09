@@ -51,5 +51,5 @@ for (var i = 0; i < types.length; i++) {
 
   //third td
   document.querySelector('#table-manual tr:nth-child(' + (i+2) + ') td:nth-child(4)').innerText = Boolean(types[i]);
-
+  document.querySelector('#table-manual tr:nth-child(' + (i+2) + ') td:nth-child(4)').className += String(Boolean(types[i]));
 }
