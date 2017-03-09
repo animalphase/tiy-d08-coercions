@@ -1,17 +1,4 @@
-console.log('begin script');
-
-// gimme DOM
-console.log(document);
-console.dir(document);
-
-// find necessary elements
-//2 arrays: types and test-columsn
-
 var types = [undefined, null, true, false, "", "1.2", "one", 0, -0, NaN, Infinity, -Infinity, 1, {}, [], [12], ['something'], function(){} ];
-
-console.log('TYPES \n' + types);
-console.log('TYPES LENGTH : ' + types.length);
-
 
 
 // generated table
@@ -19,11 +6,10 @@ console.log('TYPES LENGTH : ' + types.length);
 for (var i = 0; i < types.length; i++) {
   var table = document.querySelector('#table-generated');
 
-
   //column: current name
   var newRow = document.createElement('tr');
   var newCell = document.createElement('td');
-  var titleNode = document.createTextNode('');
+  var titleNode = document.createTextNode(types[i]);
   newCell.appendChild(titleNode);
   newRow.appendChild(newCell);
 
@@ -66,5 +52,3 @@ for (var i = 0; i < types.length; i++) {
   document.querySelector('#table-manual tr:nth-child(' + (i+2) + ') td:nth-child(4)').innerText = Boolean(types[i]);
 
 }
-
-console.log('end script');

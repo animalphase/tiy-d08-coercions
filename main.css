@@ -49,9 +49,8 @@ tr:first-child td {
 }
 
 tr td:first-child {
-  border: none;
   text-align: right;
-  font-size: .9em;
+  font-size: .8em;
   color: #f2479d;
 }
 
