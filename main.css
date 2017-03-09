@@ -18,18 +18,43 @@ body {
   color: #658ccd;
 }
 
+hr {
+  border-bottom: .1rem solid #658ccd;
+  margin: 2rem 0;
+}
+
 table {
   margin: 2rem auto;
 }
 
-tr:nth-child(2n) {
+
+tr:nth-child(2n + 1) {
   background: #E0FCFF;
 }
+
+tr:first-child {
+  background: none;
+  color: #f2479d;
+  font-weight: bold;
+}
+
 
 td {
   padding: .4rem 1rem;
   border: 1px solid #90F2FF;
 }
+
+tr:first-child td {
+  border: none;
+}
+
+tr td:first-child {
+  border: none;
+  text-align: right;
+  font-size: .9em;
+  color: #f2479d;
+}
+
 .current {
   background: #ffddee;
 }

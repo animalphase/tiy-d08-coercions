@@ -16,7 +16,40 @@ console.log('TYPES LENGTH : ' + types.length);
 
 // generated table
 // #table-generated
+for (var i = 0; i < types.length; i++) {
+  var table = document.querySelector('#table-generated');
 
+
+  //column: current name
+  var newRow = document.createElement('tr');
+  var newCell = document.createElement('td');
+  var titleNode = document.createTextNode('');
+  newCell.appendChild(titleNode);
+  newRow.appendChild(newCell);
+
+  //column: number coercions
+  var newCell = document.createElement('td');
+  var titleNode = document.createTextNode(Number(types[i]));
+  newCell.appendChild(titleNode);
+  newRow.appendChild(newCell);
+
+  //column: string coercions
+  var newCell = document.createElement('td');
+  var titleNode = document.createTextNode(String(types[i]));
+  newCell.appendChild(titleNode);
+  newRow.appendChild(newCell);
+
+  //column: Boolean coercions
+  var newCell = document.createElement('td');
+  var titleNode = document.createTextNode(Boolean(types[i]));
+  newCell.appendChild(titleNode);
+  newRow.appendChild(newCell);
+
+
+  // append all to table
+  table.appendChild(newRow);
+
+}
 
 
 // manualy typed-in html table
